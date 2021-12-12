@@ -1,8 +1,8 @@
-package org.codeover.log4j_prevent;
+package net.hexxcraft.log4j_prevent;
 
+import net.hexxcraft.log4j_prevent.listeners.ChatListener;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.plugin.PluginManager;
-import org.codeover.log4j_prevent.listeners.ChatListener;
 
 import java.util.logging.Logger;
 
@@ -17,6 +17,8 @@ public final class Log4j_Prevent extends Plugin {
 
         PluginManager pluginManager = getProxy().getPluginManager();
         pluginManager.registerListener(this, new ChatListener(this));
+
+        logger.info("---------[Log4j-Prevent]---------");
     }
 
     @Override

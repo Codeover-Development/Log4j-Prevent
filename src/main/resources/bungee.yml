@@ -1,4 +1,4 @@
 name: Log4j_Prevent
 version: ${project.version}
-main: org.codeover.log4j_prevent.Log4j_Prevent
+main: net.hexxcraft.log4j_prevent.Log4j_Prevent
 description: Disables the Log4j Exploid
