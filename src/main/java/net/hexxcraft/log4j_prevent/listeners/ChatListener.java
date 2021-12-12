@@ -14,7 +14,7 @@ public class ChatListener implements Listener {
         this.plugin = plugin;
     }
 
-    @EventHandler(priority = EventPriority.HIGHEST)
+    @EventHandler(priority = EventPriority.HIGH)
     public void onSendMessage(ChatEvent event){
         if(event.getMessage().toLowerCase().contains("${jndi")){
             event.setCancelled(true);
